@@ -35,7 +35,7 @@ class test_basemodel(unittest.TestCase):
     def tearDown(self):
         try:
             os.remove('file.json')
-        except:
+        except Exception:
             pass
 
     def test_default(self):
@@ -221,4 +221,3 @@ class TestBaseModel(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
